@@ -46,13 +46,13 @@ public class TaskManager {
         // Adds the new task to the end of the list
         public void append(Task t) {
             this.size++;
-            if (first == null) {
-                first = t;
-                last = t;
+            if (this.first == null) {
+                this.first = t;
+                this.last = t;
                 return;
             }
-            last.next = t;
-            last = last.next;
+            this.last.next = t;
+            this.last = last.next;
         }
 
         // Deletes the task at [ind] from list
@@ -61,6 +61,7 @@ public class TaskManager {
             if (ind == 0) {
                 Task out = this.first;
                 this.first = this.first.next;
+                this.size--;
                 return out;
             }
             Task toRemove = this.index(ind);
