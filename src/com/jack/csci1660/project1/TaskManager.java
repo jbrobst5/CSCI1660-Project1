@@ -3,7 +3,7 @@ package com.jack.csci1660.project1;
 import java.util.Scanner;
 
 /**
- * Created by brobst.30 on 1/24/18.
+ * Created by Jack Brobst on 1/24/18.
  *
  * Most of this is probably overkill, but I wanted to get some practice in while it's still easy.
  */
